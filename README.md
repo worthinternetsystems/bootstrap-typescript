@@ -58,3 +58,9 @@ Lint fix with
 
 Add pipelines, e.g. `.github/workflows/build.yaml` and
 `.github/workflows/update.yaml`
+
+Add tl;dr to `README.md` guiding user what to do once they've cloned the
+repository, e.g
+
+    yarn
+

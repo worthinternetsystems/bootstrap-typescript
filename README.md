@@ -9,7 +9,9 @@ Create git repository and clone
     cd my-repository
     touch README.md
 
-And copy `.gitignore` into place.
+Review `package.json` and clean out entries not needed.
+
+Copy `.gitignore` into place.
 
 Initialise yarn with typescript
 
@@ -31,11 +33,15 @@ Install eslint
 
 And copy `.eslintrc.js` into place.
 
+Install format-package
+
+    yarn add -D format-package
+
 Add the following scripts to `package.json`
 
     "scripts": {
-      "eslint": "eslint features --ext .ts",
-      "eslint:fix": "eslint features --ext .ts --fix",
+      "eslint": "eslint src --ext .ts",
+      "eslint:fix": "eslint src --ext .ts --fix",
       "lint": "yarn prettier && yarn eslint",
       "lint:fix": "yarn package:fix && yarn prettier:fix && yarn eslint:fix",
       "package:fix": "format-package -w",
@@ -44,6 +50,11 @@ Add the following scripts to `package.json`
       "update": "yarn upgrade"
     },
 
+Create an empty `src/index.ts`.
 
+Lint fix with
 
+    yarn lint:fix
 
+Add pipelines, e.g. `.github/workflows/build.yaml` and
+`.github/workflows/update.yaml`

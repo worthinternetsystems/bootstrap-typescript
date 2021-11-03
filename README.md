@@ -1,6 +1,4 @@
-# bootstrap-typescript
-
-Bootstrap Typescript Project
+# Bootstrap a Typescript Project
 
 ## tl;dr
 

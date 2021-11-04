@@ -16,10 +16,6 @@ or **(OPT1)** initialise git repository locally and push
     cd ~/projects/my/my-repository
     git init --initial-branch=main
 
-Kick off `README.md`
-
-    touch README.md
-
 Copy the following files into your repository as baseline files
 
 - `.github/workflows/build.yaml`
@@ -80,10 +76,11 @@ Add husky and lint-staged
     yarn prepare
     npx husky add .husky/pre-commit "npx lint-staged"
 
-Add `## tl;dr` section to `README.md` guiding user what to do once they've
-cloned the repository, start it off with something like
+Kick off `README.md` and add `## tl;dr` section guiding user what to do once
+they've cloned the repository, start it off with something like
 
-    yarn
+    touch README.md
+    echo -e "# title\n\n## tl;dr\n\n    yarn" >> README.md
 
 and add to this README as the repository evolves.
 
@@ -93,9 +90,11 @@ If **(OPT2)** it's a public repository add a LICENSE file, e.g. BSD
 
 Commit and push
 
+    git add .
     git commit -am "Start"
 
-If **(OPT1)** you initialised git repository repository then add the remote origin
+If **(OPT1)** you initialised git repository repository then add the remote
+origin
 
     git remote add origin git@github.com:ianhomer/boot1.git
 

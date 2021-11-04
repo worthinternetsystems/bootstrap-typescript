@@ -22,7 +22,7 @@ Copy the following files into your repository as baseline files
 - `.lintstagedrc`
 - `src/index.ts` - simple typescript file to get rolling
 
-Use the command line if you like
+Use the command line to copy files into place if you like
 
     export BRANCH_URI=ianhomer/bootstrap-typescript/main
     export RAW_URI=https://raw.githubusercontent.com/$BRANCH_URI

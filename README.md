@@ -1,5 +1,8 @@
 # Bootstrap a Typescript Project
 
+Explicit steps to bootstrap a typescript project with no hidden magic. Be aware
+of each step. Only do it if you want it. Expand on these steps as you desire.
+
 ## tl;dr
 
 Create git repository and clone
@@ -11,23 +14,36 @@ Create git repository and clone
 
 Review `package.json` and clean out entries not needed.
 
-Copy the following files into place as baseline
+Copy the following files into your repository as baseline files
 
 - `.github/workflows/build.yaml`
 - `.eslintc.js`
 - `.gitignore`
 - `.lintstagedrc`
+- `src/index.ts` - simple typescript file to get rolling
+
+Use the command line if you like
+
+    export BRANCH_URI=ianhomer/bootstrap-typescript/main
+    export RAW_URI=https://raw.githubusercontent.com/$BRANCH_URI
+    mkdir -p .github/workflows src
+    curl $RAW_URI/.github/workflows/build.yaml -sS \
+      -o .github/workflows/build.yaml
+    curl $RAW_URI/.eslintc.js -sSO
+    curl $RAW_URI/.gitignore -sSO
+    curl $RAW_URI/.lintstagedrc -sSO
+    curl $RAW_URI/src/index.ts -sS -o src/index.ts
 
 Initialise yarn with typescript
 
     yarn init
     yarn add -D typescript ts-node
 
-Install prettier
+Add prettier
 
     yarn add -D prettier
 
-Install eslint
+Add eslint
 
     yarn add -D                        \
       eslint                           \
@@ -36,7 +52,7 @@ Install eslint
       @typescript-eslint/eslint-plugin \
       @typescript-eslint/parser
 
-Install format-package
+Add format-package
 
     yarn add -D format-package
 
@@ -53,9 +69,7 @@ Add the following scripts to `package.json`
       "prettier:fix": "npx prettier --write ."
     },
 
-Create an empty `src/index.ts`.
-
-Lint fix with
+Check linting added OK
 
     yarn lint:fix
 
@@ -70,4 +84,8 @@ cloned the repository, start it off with something like
 
     yarn
 
-and build on this as the repository evolves.
+and add to this README as the repository evolves.
+
+If it's a public repository add a LICENSE file, e.g. BSD
+
+    curl $RAW_URI/LICENSE -sSO

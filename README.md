@@ -5,11 +5,19 @@ of each step. Only do it if you want it. Expand on these steps as you desire.
 
 ## tl;dr
 
-Create git repository and clone
+Either create git repository and clone
 
     cd ~/projects/my
     git clone git@github.com:ianhomer/my-repository.git
     cd my-repository
+
+**or** initialise git repository locally and push
+
+    cd ~/projects/my/my-repository
+    git init --initial-branch=main
+
+Kick off `README.md`
+
     touch README.md
 
 Copy the following files into your repository as baseline files
@@ -39,22 +47,15 @@ Initialise yarn with typescript
 
 Review `package.json` and clean out entries not needed.
 
-Add prettier
-
-    yarn add -D prettier
-
-Add eslint
+Add prettier, eslint and format-package for linting
 
     yarn add -D                        \
+      prettier format-package          \
       eslint                           \
       eslint-plugin-simple-import-sort \
       eslint-config-prettier           \
       @typescript-eslint/eslint-plugin \
       @typescript-eslint/parser
-
-Add format-package
-
-    yarn add -D format-package
 
 Add the following scripts to `package.json`
 
@@ -89,3 +90,15 @@ and add to this README as the repository evolves.
 If it's a public repository add a LICENSE file, e.g. BSD
 
     curl $RAW_URI/LICENSE -sSO
+
+Commit and push
+
+    git commit -am "Start"
+
+**If** you initialised git repository repository then add the remote origin
+
+    git remote add origin git@github.com:ianhomer/boot1.git
+
+And push
+
+    git push

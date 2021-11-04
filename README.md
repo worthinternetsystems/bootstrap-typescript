@@ -5,7 +5,7 @@ of each step. Only do it if you want it. Expand on these steps as you desire.
 
 ## tl;dr
 
-Either create git repository and clone
+Create git repository and clone
 
     git clone git@github.com:ianhomer/my-repository.git
     cd my-repository

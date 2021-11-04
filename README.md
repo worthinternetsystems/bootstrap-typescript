@@ -87,7 +87,7 @@ cloned the repository, start it off with something like
 
 and add to this README as the repository evolves.
 
-**(OPT2)** If it's a public repository add a LICENSE file, e.g. BSD
+If **(OPT2)** it's a public repository add a LICENSE file, e.g. BSD
 
     curl $RAW_URI/LICENSE -sSO
 
@@ -95,7 +95,7 @@ Commit and push
 
     git commit -am "Start"
 
-**(OPT1)** you initialised git repository repository then add the remote origin
+If **(OPT1)** you initialised git repository repository then add the remote origin
 
     git remote add origin git@github.com:ianhomer/boot1.git
 

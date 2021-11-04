@@ -46,8 +46,7 @@ Add the following scripts to `package.json`
       "lint:fix": "yarn package:fix && yarn prettier:fix && yarn eslint:fix",
       "package:fix": "format-package -w",
       "prettier": "npx prettier --check .",
-      "prettier:fix": "npx prettier --write .",
-      "update": "yarn upgrade"
+      "prettier:fix": "npx prettier --write ."
     },
 
 Create an empty `src/index.ts`.

@@ -7,6 +7,7 @@
     "lint": "yarn prettier && yarn eslint",
     "lint:fix": "yarn package:fix && yarn prettier:fix && yarn eslint:fix",
     "package:fix": "format-package -w",
+    "prepare": "husky install",
     "prettier": "npx prettier --check .",
     "prettier:fix": "npx prettier --write ."
   },
@@ -17,6 +18,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "format-package": "^6.1.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"

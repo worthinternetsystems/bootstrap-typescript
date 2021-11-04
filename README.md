@@ -96,7 +96,7 @@ Commit
 If **(OPT1)** you initialised git repository repository then add the remote
 origin
 
-    git remote add origin git@github.com:ianhomer/boot1.git
+    git remote add origin git@github.com:my-organisation/my-repository.git
 
 And push
 

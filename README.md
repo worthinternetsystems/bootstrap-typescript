@@ -93,7 +93,7 @@ Commit
     git add .
     git commit -am "Start"
 
-If **(OPT1)** you initialised git repository repository then add the remote
+If **(OPT1)** you initialised git repository repository, then add the remote
 origin
 
     git remote add origin git@github.com:my-organisation/my-repository.git

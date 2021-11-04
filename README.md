@@ -15,7 +15,8 @@ or **(OPT1)** initialise git repository locally and push
     mkdir my-repository && cd my-repository
     git init --initial-branch=main
 
-Copy the following files into your repository as baseline files
+Copy the following files from this repository into your local repository as
+baseline files
 
 - `.github/workflows/build.yaml`
 - `.eslintc.js`
@@ -87,7 +88,7 @@ If **(OPT2)** it's a public repository add a LICENSE file, e.g. BSD
 
     curl $RAW_URI/LICENSE -sSO
 
-Commit and push
+Commit
 
     git add .
     git commit -am "Start"

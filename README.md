@@ -12,8 +12,6 @@ Create git repository and clone
     cd my-repository
     touch README.md
 
-Review `package.json` and clean out entries not needed.
-
 Copy the following files into your repository as baseline files
 
 - `.github/workflows/build.yaml`
@@ -29,7 +27,7 @@ Use the command line to copy files into place if you like
     mkdir -p .github/workflows src
     curl $RAW_URI/.github/workflows/build.yaml -sS \
       -o .github/workflows/build.yaml
-    curl $RAW_URI/.eslintc.js -sSO
+    curl $RAW_URI/.eslintrc.js -sSO
     curl $RAW_URI/.gitignore -sSO
     curl $RAW_URI/.lintstagedrc -sSO
     curl $RAW_URI/src/index.ts -sS -o src/index.ts
@@ -38,6 +36,8 @@ Initialise yarn with typescript
 
     yarn init
     yarn add -D typescript ts-node
+
+Review `package.json` and clean out entries not needed.
 
 Add prettier
 

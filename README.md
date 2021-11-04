@@ -10,7 +10,7 @@ Create git repository and clone
     git clone git@github.com:ianhomer/my-repository.git
     cd my-repository
 
-or **(OPT1)** initialise git repository locally and push
+or **(OPT1)** initialise git repository locally
 
     mkdir my-repository && cd my-repository
     git init --initial-branch=main

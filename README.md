@@ -84,7 +84,7 @@ they've cloned the repository, start it off with something like
 
 and add to this README as the repository evolves.
 
-If **(OPT2)** it's a public repository add a LICENSE file, e.g. BSD
+If **(OPT2)** repository is public, then add a LICENSE file, e.g. BSD
 
     curl $RAW_URI/LICENSE -sSO
 

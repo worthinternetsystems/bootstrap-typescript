@@ -7,13 +7,12 @@ of each step. Only do it if you want it. Expand on these steps as you desire.
 
 Either create git repository and clone
 
-    cd ~/projects/my
     git clone git@github.com:ianhomer/my-repository.git
     cd my-repository
 
 or **(OPT1)** initialise git repository locally and push
 
-    cd ~/projects/my/my-repository
+    mkdir my-repository && cd my-repository
     git init --initial-branch=main
 
 Copy the following files into your repository as baseline files

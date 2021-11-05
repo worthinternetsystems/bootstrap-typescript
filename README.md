@@ -7,7 +7,7 @@ of each step. Only do it if you want it. Expand on these steps as you desire.
 
 Create git repository and clone
 
-    git clone git@github.com:ianhomer/my-repository.git
+    git clone git@github.com:my-organisation/my-repository.git
     cd my-repository
 
 or **(OPT1)** initialise git repository locally
@@ -26,7 +26,7 @@ baseline files
 
 You can use the command line to copy files into place if you like
 
-    export BRANCH_URI=ianhomer/bootstrap-typescript/main
+    export BRANCH_URI=worthinternetsystems/bootstrap-typescript/main
     export RAW_URI=https://raw.githubusercontent.com/$BRANCH_URI
     mkdir -p .github/workflows src
     curl $RAW_URI/.github/workflows/build.yaml -sS \
